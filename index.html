@@ -1151,6 +1151,31 @@
             margin-top: 12px;
         }
 
+        .form-sms-consent {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.55);
+            line-height: 1.5;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .form-sms-consent a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: underline;
+        }
+
+        .modal-sms-consent {
+            font-size: 0.72rem;
+            color: var(--text-light);
+            line-height: 1.5;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .modal-sms-consent a {
+            color: var(--gold);
+        }
+
         /* Step 2 */
         .form-step { display: block; }
         .form-step.hidden { display: none; }
@@ -1572,6 +1597,7 @@
                             </select>
                         </div>
                         <button class="form-submit-btn" onclick="submitInlineStep2()">Submit Quote Request</button>
+                        <p class="form-sms-consent">By providing your phone number, you agree to receive text messages from Hill Country Cleaning Co LLC. Message frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to cancel. <a href="/privacy-policy">Privacy Policy</a> &amp; <a href="/terms-of-service">Terms of Service</a>.</p>
                     </div>
 
                     <!-- Success -->
@@ -1616,8 +1642,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Hill Country Cleaning Co. LLC. All rights reserved.</p>
-                <p>Serving Buda, Kyle & South Austin | <a href="/privacy-policy">Privacy Policy</a></p>
+                <p>&copy; 2026 Hill Country Cleaning Co LLC. All rights reserved.</p>
+                <p>Serving Buda, Kyle & South Austin | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
             </div>
         </div>
     </footer>
@@ -1716,6 +1742,7 @@
                 </div>
                 <button class="form-submit-btn" onclick="submitModalStep2()">Submit Quote Request</button>
                 <p class="form-fine-print"><a href="#" onclick="skipModalStep2(); return false;" style="color: var(--text-light); text-decoration: underline;">Skip -- just email me a quote</a></p>
+                <p class="modal-sms-consent">By providing your phone number, you agree to receive text messages from Hill Country Cleaning Co LLC. Message frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to cancel. <a href="/privacy-policy">Privacy Policy</a> &amp; <a href="/terms-of-service">Terms of Service</a>.</p>
             </div>
 
             <!-- Success -->
